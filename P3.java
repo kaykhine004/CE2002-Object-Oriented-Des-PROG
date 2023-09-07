@@ -21,9 +21,9 @@ public class P3{
             //for loop, while loop, do while loop
             System.out.println("1. Using a for loop:");
             usingForLoop(start, end, increment);
-            System.out.println("1. Using a while loop:");
+            System.out.println("2. Using a while loop:");
             usingWhileLoop(start, end, increment);
-            System.out.println("1. Using a doWhile loop:");
+            System.out.println("3. Using a doWhile loop:");
             usingDoWhileLoop(start, end, increment);
         }
     }
