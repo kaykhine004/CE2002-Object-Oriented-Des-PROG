@@ -22,11 +22,3 @@ public class P1 {
     }
 }
 
-
-/* another method
-Scanner scanner = new Scanner(System.in);
-String s = scanner.next();
-char c= s.toLowerCase().charAt(0);
-
-
- */
