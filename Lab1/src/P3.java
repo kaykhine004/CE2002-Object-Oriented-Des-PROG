@@ -30,9 +30,9 @@ public class P3{
     private static void usingForLoop(int start,int end,int increment){
         System.out.println("US$       S$\n ---------------");
         for (int i= start; i<= end; i+=increment){
-            double USD = i / USD2SGD;  // here i set double but answer keep producing more than 2 decimal
-            String doubleUSD = String.format("%.2f", USD); // so trim the fractional part to 2
-            System.out.println(i +"       "+ doubleUSD);
+            double USD = i/ USD2SGD;
+            double roundUSD = Math.round(USD * 100.0) / 100.0;
+            System.out.println(i +"       "+ roundUSD);
         }
     }
     private static void usingWhileLoop(int start, int end, int increment){
@@ -40,8 +40,8 @@ public class P3{
         int i= start;
         while( i<=  end){
             double USD = i/ USD2SGD;
-            String doubleUSD = String.format("%.2f", USD);
-            System.out.println(i +"       "+ doubleUSD);
+            double roundUSD = Math.round(USD * 100.0) / 100.0;
+            System.out.println(i +"       "+ roundUSD);
             i+=increment;
         }
     }
@@ -50,8 +50,8 @@ public class P3{
         int i = start;
         do{
             double USD = i/ USD2SGD;
-            String doubleUSD = String.format("%.2f", USD);
-            System.out.println(i +"       "+ doubleUSD);
+            double roundUSD = Math.round(USD * 100.0) / 100.0;
+            System.out.println(i +"       "+ roundUSD);
             i+=increment;
         }while(i<= end);
     }
