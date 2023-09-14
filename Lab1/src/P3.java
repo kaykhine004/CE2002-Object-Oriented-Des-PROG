@@ -30,18 +30,18 @@ public class P3{
     private static void usingForLoop(int start,int end,int increment){
         System.out.println("US$       S$\n ---------------");
         for (int i= start; i<= end; i+=increment){
-            double USD = i/ USD2SGD;
-            double roundUSD = Math.round(USD * 100.0) / 100.0;
-            System.out.println(i +"       "+ roundUSD);
+            double USD = i* USD2SGD;
+            double roundedUSD = Math.round(USD * 100.0) / 100.0;
+            System.out.println(i +"       "+ roundedUSD);
         }
     }
     private static void usingWhileLoop(int start, int end, int increment){
         System.out.println("US$       S$\n ---------------");
         int i= start;
         while( i<=  end){
-            double USD = i/ USD2SGD;
-            double roundUSD = Math.round(USD * 100.0) / 100.0;
-            System.out.println(i +"       "+ roundUSD);
+            double USD = i* USD2SGD;
+            double roundedUSD = Math.round(USD * 100.0) / 100.0;
+            System.out.println(i +"       "+ roundedUSD);
             i+=increment;
         }
     }
@@ -49,9 +49,9 @@ public class P3{
         System.out.println("US$       S$\n ---------------");
         int i = start;
         do{
-            double USD = i/ USD2SGD;
-            double roundUSD = Math.round(USD * 100.0) / 100.0;
-            System.out.println(i +"       "+ roundUSD);
+            double USD = i* USD2SGD;
+            double roundedUSD = Math.round(USD * 100.0) / 100.0;
+            System.out.println(i +"       "+ roundedUSD);
             i+=increment;
         }while(i<= end);
     }
