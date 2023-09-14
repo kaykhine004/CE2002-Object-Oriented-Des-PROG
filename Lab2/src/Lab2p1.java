@@ -135,20 +135,19 @@ public class Lab2p1 {
 
     public static long extractOddDigits(long n) {
         if(n<=0){
-            System.out.println("-Error input");
+            System.out.println("-error input");
             return -1;
         }
-        long decimal= 1;
-        long oddnum =0;
-        while(n>0){
-            long digit = n%10;
-            if(digit %2 ==1){
-                oddnum += (digit*decimal);
-                decimal *=10;
+        long count=0;
+        int oddnum= 0;
+        while(n>0) {
+            long digit = n % 10; //remainder
+            if (digit % 2 == 1) {
+                oddnum += (digit * Math.pow (10,count)); //move 1 digit each by power of 10
+                count++;
             }
             n/=10;
         }
-
         return oddnum;
     }
 }
