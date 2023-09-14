@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class P3{
-    public static final double USD2SGD = 1.82; //to call at private methods
+    public static final double SGD2USD = 1.82; //to call at private methods
     public static void main(String[] args){
 
         Scanner sc = new Scanner(System.in);
@@ -30,7 +30,7 @@ public class P3{
     private static void usingForLoop(int start,int end,int increment){
         System.out.println("US$       S$\n ---------------");
         for (int i= start; i<= end; i+=increment){
-            double USD = i* USD2SGD;
+            double USD = i* SGD2USD;
             double roundedUSD = Math.round(USD * 100.0) / 100.0;
             System.out.println(i +"       "+ roundedUSD);
         }
@@ -39,7 +39,7 @@ public class P3{
         System.out.println("US$       S$\n ---------------");
         int i= start;
         while( i<=  end){
-            double USD = i* USD2SGD;
+            double USD = i* SGD2USD;
             double roundedUSD = Math.round(USD * 100.0) / 100.0;
             System.out.println(i +"       "+ roundedUSD);
             i+=increment;
@@ -49,7 +49,7 @@ public class P3{
         System.out.println("US$       S$\n ---------------");
         int i = start;
         do{
-            double USD = i* USD2SGD;
+            double USD = i* SGD2USD;
             double roundedUSD = Math.round(USD * 100.0) / 100.0;
             System.out.println(i +"       "+ roundedUSD);
             i+=increment;
